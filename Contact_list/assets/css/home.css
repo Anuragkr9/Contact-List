@@ -1,0 +1,83 @@
+body{
+  margin:40px;
+  background-color: aquamarine;  
+}
+#title{
+  text-align: center;
+  font-size: large;
+  font-style: italic;
+  text-decoration: dotted;
+  font-size: 40px;
+}
+
+#container {
+  /* text-align: center; */
+  background-color:#1c7d74;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 0px solid black;
+  padding: 6px;
+  /* width: 200px; */
+  margin: auto;
+  width: 500px;
+  margin-bottom: 6px;
+  height: 30px;
+}
+#container:hover{
+  background-color: gray;
+}
+#contact{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #673ab7; */
+    color: aliceblue;
+    width: 80%;
+    height:20px;
+    text-align: center;
+    /* border: 2px solid; */
+    padding: 3px;
+    font-family: sans-serif;
+
+  }
+#contact div p{
+  margin:0px;
+}
+#delete-contact{
+  /* background-color: blueviolet; */
+  width: 14%;
+  text-align: center;
+  margin: 4px 10px;
+}
+.form{
+  text-align: center;
+}
+.form input{
+  text-align: center;
+  background-color: inherit;
+  /* color: black; */
+  padding: 10px;
+  /* border-right: 2px solid rgb(75, 35, 35); */
+  /* margin: 20px; */
+  width: 200px;
+  font-size: medium;
+  border: 0px solid;
+  border-bottom: 3px solid black;
+}
+.form button{
+
+  background-color: rgb(38, 139, 197);
+  color: black;
+  padding: 10px;
+  border: 2px solid black;
+  /* margin: 20px; */
+  margin-top: 0px;
+  width: 100px;
+  height: 41px;
+  
+}
+
+.form button:hover{
+  background-color: rgb(15, 71, 40);
+ 
+}

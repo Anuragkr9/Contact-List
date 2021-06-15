@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Contact List</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/home.css">
+  </head>
+  <body>
+   
+      <h1 id ="title">
+        <i class="fas fa-address-book"></i>
+         Contact List</h1>
+      <% for(let i of contact_list){%>
+         <div id="container">  
+
+          <div id="contact" >
+            <div><p> <%= i.name%> </p></div>
+            <div><p> <%= i.phone%> </p></div>
+          </div>
+          <div id="delete-contact">
+            <!-- " ? " represents the query parameters we can add more parameter using & to join them  -->
+            <a href="./delete-contact/?id=<%= i._id%>" >
+              <!-- for adding fonts -->
+              <i class="far fa-window-close"></i>  
+              <!-- <button type="button" > Delete </button> -->
+            </a>
+            
+          </div>
+
+         </div>
+
+      <%}%>
+    
+    <div>
+      <form action="/create_contact" method="POST" class="form">
+        <input type='text' , name= 'name', placeholder="Enter name" required></input>
+        <input type="number" , name ='phone', placeholder="Enter phone number"></input>
+      <!-- <br>   -->
+        <button type="submit" >Add contact</button> 
+      </form>
+    </div>
+
+    <script type = 'text/javascript', src="js/home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>contact list</title>
+  </head>
+  <body>
+    <p>Hii <%= name%></p>
+
+    <%#  conditon , using = whenever we have to show variable%>
+    <% if(cond){%>
+        <%= cond%>
+        <h2>Indside if</h2>
+    <%}else{%>
+        <h1>inside else</h1>
+    <%}%>
+
+
+    <%#  For loop%>
+    <ol>
+      <% for(let i=0;i<5;i++){%>
+      
+      <li>
+        <p><%=i %> </p>
+      
+      </li>
+
+      <%}%>
+    </ol>
+    
+  </body>
+</html>
